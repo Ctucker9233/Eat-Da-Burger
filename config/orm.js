@@ -14,10 +14,12 @@ var orm = {
             cb(result)
         });
     },
-    updateOne: function(tableName, newBurger, eaten, tableCol, value, cb){
-        connection.query("update ?? set burger_name = ??, devoured = ?? where ?? = ?", [tableName, newBurger, eaten, tableCol, value], function(err, result){
+    updateOne: function(tableName, eaten, tableCol, value, cb){
+        connection.query("update ?? set devoured = ?? where ?? = ?", [tableName, newBurger, eaten, tableCol, value], function(err, result){
             if (err) throw err
             cb(result)
         });
     }
 };
+
+module.exports = orm;
