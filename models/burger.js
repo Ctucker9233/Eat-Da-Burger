@@ -12,7 +12,7 @@ var burger = {
         });
     },
     updateOne: function(eaten, value, cb){
-        orm.updateOne("burgers", eaten, "burger_name", value, function(res){
+        orm.updateOne("burgers", eaten, "id", value, function(res){
             cb(res)
         })
     }
