@@ -1,3 +1,18 @@
+body {
+  background-color: #F5DCAA;
+}
+
+img {
+  width: 20%;
+  height: auto;
+  justify-content: center;
+  margin: auto 0;
+}
+
+h1 {
+  text-align: center;
+}
+
 li {
     padding: 5px;
     margin: 5px;
@@ -11,10 +26,18 @@ li {
   .create-update-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
+    background: white;
   }
   
   .form-group {
     margin-bottom: 5px;
+  }
+
+  .eaten{
+    text-decoration: line-through;
+  }
+
+  .eaten > .change-devoured{
+    display: none;
   }
   
